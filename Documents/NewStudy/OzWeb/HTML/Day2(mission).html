@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="기록하는 삶📚" />
+    <!-- 웹 페이지의 타입 -->
+    <meta property="og:type" content="website" />
+    <!-- 웹 페이지의 대표 URL -->
+    <meta property="og:url" content="<https://jiineeee.tistory.com/>" />
+    <!-- 이미지, 사이즈는 약 410 x 200px를 권장! -->
+    <meta property="og:image" content="이미지 링크" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Matemasie&family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>포토 갤러리</title>
+    <style>
+      h1 {
+        font-family: 'Jersey 10', serif;
+      }
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar img {
+        margin-right: 10px;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      /* 드롭다운을 보여줌 */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      figcaption {
+        font-size: 16px;
+        color: red;
+        text-align: center;
+        margin-top: 10px;
+        padding: 5px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        font-style: italic;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="logo2.jpeg" alt="Home Icon" width="50" />
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#link1">Link 1</a>
+          <a href="#link2">Link 2</a>
+          <a href="#link3">Link 3</a>
+        </div>
+      </div>
+      <a href="#contact">Contact</a>
+    </div>
+    <header>
+      <img src="applelogo.jpeg" alt="An example image" width="40" />
+      <h1>Photo Gallery Homepage</h1>
+      <nav>
+        <ul>
+          <li><a href="#gallary1" target="_blank">G1</a></li>
+          <li><a href="#gallary2" target="_blank">G2</a></li>
+          <li><a href="#gallary3" target="_blank">G3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="G1">
+        <h2>macbook</h2>
+        <figure>
+          <img src="macbook.png" alt="An example image" width="200" />
+          <figcaption>macbook</figcaption>
+          <article>
+            <h2>맥북의 장점</h2>
+            <p>개발 시 사용하기 편리함</p>
+          </article>
+        </figure>
+      </section>
+
+      <section id="G2">
+        <h2>imac</h2>
+        <figure>
+          <img src="imac.png" alt="An example image" width="200" />
+          <figcaption>imac</figcaption>
+        </figure>
+        <p>Published on: <time datetime="2023-08-23">August 23, 2023</time></p>
+      </section>
+
+      <section id="G3">
+        <h2>mac mini</h2>
+        <figure>
+          <img src="mac mini.png" alt="An example image" width="200" />
+          <figcaption>mac mini</figcaption>
+        </figure>
+      </section>
+
+      <section id="G2">
+        <h2>imac</h2>
+        <p>imac에는 여러 종류가 있다.</p>
+        <article>
+          <h4>imac2</h4>
+          <p>This is an example blog post...</p>
+        </article>
+        <article>
+          <h4>imac3</h4>
+          <p>This is an example blog post...</p>
+        </article>
+      </section>
+      <iframe
+        width="560"
+        height="500"
+        src="https://m.sports.naver.com/video/1223986"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <section id="contact">
+        <h2>연락처</h2>
+        <p>
+          <a href="mailto:info@example.com">info@example.com</a>를 통해서 연락할
+          수 있어요.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 나의 웹 사이트. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
