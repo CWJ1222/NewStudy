@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Day 3: CSS 기초</title>
+    <style>
+      a,
+      p {
+        color: Blue;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      #main-title {
+        font-size: 32px;
+      }
+      h1,
+      h2,
+      h3 {
+        color: green;
+      }
+      div > p {
+        color: red;
+        font-size: 18px;
+      }
+      div {
+        padding: 20px;
+        margin: 15px;
+        border: 2px solid black;
+      }
+      .box {
+        margin: 10px 20px 30px 40px;
+      }
+      #content {
+        margin: 30px 10px;
+      }
+      body {
+        background-color: lightgreen;
+      }
+      .profile-pic {
+        border: 5px dotted;
+        border-radius: 10px;
+      }
+      #MENU {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      .nav-item {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+        display: inline-block;
+      }
+      a:hover {
+        color: yellow;
+      }
+      .button {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        transition: width 2s, background-color 0.5s ease-in-out 0.5s;
+      }
+      .button:hover {
+        width: 150px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>PPPPP Tag</p>
+    <div class="highlight">highlight class</div>
+    <div id="main-title">main-title</div>
+    <h1>Home page</h1>
+    <h2>Home page</h2>
+    <h3>Home page</h3>
+    <div>
+      <p>"P" in "div"</p>
+    </div>
+    <a href="https://ioanything.site">Visit Example</a>
+    <div class="box">box class</div>
+    <div id="content">id content</div>
+
+    <img
+      src="geko.jpeg"
+      class="profile-pic"
+      alt="Profile Picture"
+      width="250"
+    />
+    <div id="MENU">MENU</div>
+    <br />
+    <div class="nav-item">nav1</div>
+    <div class="nav-item">nav2</div>
+    <div class="nav-item">nav3</div>
+    <div class="button"></div>
+  </body>
+</html>
