@@ -1,0 +1,62 @@
+package com.shinhan.day01;
+
+/* 
+ * 정수 : byte short char int long
+ * 실수 : float double
+ * 논리 : boolean
+ * 
+ * */
+
+public class VariableType {
+
+	public static void main(String[] args) {
+
+		System.out.println("main start");
+//		f1();
+		// f2();
+		// f3();
+		//f4();
+		f5();
+
+		System.out.println("main fin");
+
+	}
+
+	/*
+	 * private static void f4() { // int 4byte : System.out.println("---int---"); //
+	 * 기본형타입 int + 기능추가 ->Integer Wrapper class // literal(값) : 기본타입은 int int score
+	 * = Integer.MAX_VALUE; score = score + 1; score += 1; score++;
+	 * System.out.println("score=" + score);
+	 * 
+	 * }
+	 */
+	
+	private static void f5() {
+		// long 8byte :
+		System.out.println("---long---");
+		// 기본형타입 long + 기능추가 ->Integer Wrapper class
+		// literal(값) : 기본타입은 int
+		long score = 2147483648L;//마지막에 L, 붙이면 long이 된다.
+		score = score + 1;
+		score += 1;//복합대입연산
+		score++;
+		System.out.println("score=" + score);
+
+	}
+
+	/*
+	 * private static void f3() { //char (2byte) 단일문자 0 ~ 65535 //char grade = '
+	 * ';//빈문자불가 char grade = 'A' ;//빈문자불가 grade = 65; grade = 73; grade = 0x0041;
+	 * grade++;//정수라서계산 System.out.println("grade="+grade); }
+	 */
+}
+/*
+ * private static void f2() { // short (2byte) -32768~32767 // 1. 변수선언 + 할당
+ * short score = Short.MAX_VALUE; score++; score += 2;
+ * System.out.println("score=" + score); } }
+ */
+/*
+ * private static void f1() { System.out.println("---byte----"); // 변수선언 byte
+ * score; // -128~127 // 2. 변수값을 할당 : 메모리에 저장한다. score = 127; score++; // 3.
+ * 변수사용 System.out.println("score=" + score);// 문자+숫자 => 문자 } }
+ */

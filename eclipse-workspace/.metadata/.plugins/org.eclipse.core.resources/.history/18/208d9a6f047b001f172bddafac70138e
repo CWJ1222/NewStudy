@@ -1,0 +1,88 @@
+package com.shinhan.day01;
+
+public class TypeTrans {
+
+	public static void main(String[] args) {
+		// typeTest2();
+		// typeTest3();
+		// typeTest5();
+		typeTest6();
+
+	}
+
+	private static void typeTest6() {
+		int a = 10;
+		int b = 3;
+		
+		System.out.println("더하기 " + (a + b));
+		System.out.println("뻬기 "+(a - b));
+		System.out.println(a * b);
+		System.out.println(a / b);
+		System.out.println(a % b);
+	}
+
+	/*
+	 * private static void typeTest5() { // char는 자바의 기본형 타입이다. 반드시 1문자만 가능, 반드시 '로
+	 * 작성 char ch = '자'; // String은 자바의 class 이다. // java.base모듈 / java.lang 패키지 /
+	 * Sting.class // 변경불가, 고정문자 String s1 = "자바"; // 컴파일 시점에 객체가 만들어짐, 이미 존재하는 리터럴은
+	 * 다시 생성안함 String s2 = new String("자바");// 실행시점에 만들어짐 String s3 = "자바"; String
+	 * s4 = new String("자바");
+	 * 
+	 * String s5 = "이 것이 \n \"자바\"다"; // \를 넣어야 안에 따옴표 넣을 수 있음 String s6 = """ 이 것이
+	 * "자바"다 """; // """ 세개하면 안에 문자열 다 넣을 수 있음
+	 * 
+	 * String s6 = """ 이 것이 "자바"다 """; // """ 세개하면 안에 문자열 다 넣을 수 있
+	 * 
+	 * 
+	 * s1 = s1 + "!!"; // 새로운 주소에 만들어진다. s3 = s3 + "!!"; System.out.println(s1 ==
+	 * s3); // 주소가 같은가? 라는 질문이기 때문에 문자열을 비교할 때는 == 되도록 사용하지마 System.out.println(s2
+	 * == s4);
+	 * 
+	 * System.out.println(s1.equals(s3)); // 값비교 System.out.println(s5);
+	 * System.out.println(s6);
+	 * 
+	 * System.out.println(System.identityHashCode(s1));
+	 * System.out.println(System.identityHashCode(s3));
+	 * 
+	 * }
+	 */
+
+	/*
+	 * private static void typeTest3() { byte a = 10, b = 20, c; //수식에 있는 정수는 int로
+	 * 자동변형된다. //강제형변환 c = (byte)(a + b); System.out.println(c);
+	 * 
+	 * }
+	 */
+
+	/*
+	 * private static void typeTest() { //1. 자동 형변환 : 큰 타입의 방 = 작은 값 //2.강제형변환 : 작은
+	 * 타입의 방 = (작은타입으로바꿔서)큰값 //byte(1) < short(2) < int(4) < long(8) < float(4) <
+	 * double(8) // char(2) < byte var1 = 97; short var2 = 97; //short char 는 자동형변환
+	 * 불가 char var3 = 97; int var4 = 97; long var5 = 97; float var6 = 97; double
+	 * var7 = 97;
+	 * 
+	 * var4 = var1; //가능함 var6 = var5; System.out.println(var4);
+	 * 
+	 * }
+	 */
+
+	/*
+	 * private static void typeTest2() { // 1. 자동 형변환 : 큰 타입의 방 = 작은 값 // 2.강제형변환 :
+	 * 작은 타입의 방 = (작은타입으로바꿔서)큰값
+	 * 
+	 * // byte(1) < short(2) < int(4) < long(8) < float(4) < double(8) // char(2) <
+	 * 
+	 * byte var1 = 97; short var2 = 97; // short char 는 자동형변환 불가 char var3 = 97; int
+	 * var4 = 97; long var5 = 97; float var6 = 97; double var7 = 97;
+	 * 
+	 * var4 = var1; // 가능함 var6 = var5; var1 = (byte) var2; // 강제형변환, 앞에 써준다
+	 * 
+	 * // var2 = 130 인데 byte로 강제로 변환하면 데이터가 손실될 수 있음 // var1 이 97이면 var3 = var1이
+	 * 안된다. byte가 char로 형변환이 안됨. // (char)를 붙이면 인식됨
+	 * 
+	 * System.out.println(var4);
+	 * 
+	 * }
+	 */
+
+}

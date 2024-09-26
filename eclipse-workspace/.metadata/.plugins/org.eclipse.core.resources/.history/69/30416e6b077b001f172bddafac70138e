@@ -1,0 +1,16 @@
+package com.shinhan.day01;
+
+public class VariableVariation {
+
+	public static void main(String[] args) {
+		int score = 100;
+		method1();
+		System.out.println("main에서 출력 " + score);
+	}
+
+	private static void method1() {
+		int score = 200;
+		System.out.println("method1에서출력 "+score);
+	}
+
+}

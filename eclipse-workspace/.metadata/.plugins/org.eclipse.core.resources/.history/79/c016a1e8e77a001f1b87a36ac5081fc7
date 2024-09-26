@@ -1,0 +1,33 @@
+package com.shinhan.day01;
+
+/* 
+ * 정수 : byte short char int long
+ * 실수 : float double
+ * 논리 : boolean
+ * 
+ * */
+
+public class VariableType {
+
+	public static void main(String[] args) {
+
+		System.out.println("main start");
+//		f1();
+		f2();
+		System.out.println("main fin");
+
+	}
+
+	private static void f2() {
+		// short (2byte) -32768~32767
+		// 1. 변수선언 + 할당
+		short score = Short.MAX_VALUE;
+		score++;
+		System.out.println("main fin");
+	}
+
+/*
+ * private static void f1() { System.out.println("---byte----"); // 변수선언 byte
+ * score; // -128~127 // 2. 변수값을 할당 : 메모리에 저장한다. score = 127; score++; // 3.
+ * 변수사용 System.out.println("score=" + score);// 문자+숫자 => 문자 } }
+ */

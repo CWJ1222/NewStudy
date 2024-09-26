@@ -1,0 +1,28 @@
+package com.shinhan.day01;
+
+public class TypeTrans {
+
+	public static void main(String[] args) {
+		typeTest();
+
+	}
+
+	private static void typeTest() {
+		//1. 자동 형변환 : 큰 타입의 방 = 작은 값
+		//2.강제형변환 : 작은 타입의 방 = (작은타입으로바꿔서)큰값
+		//byte(1) < short(2) < int(4) < long(8) < float(4) < double(8)
+		//          char(2) <
+		byte var1 = 97;
+		short var2 = 97;
+		char var3 = 97;
+		int var4 = 97;
+		long var5 = 97;
+		float var6 = 97;
+		double var7 = 97;
+
+		var4 = var1; //가능함
+		System.out.println(var4);
+		
+	}
+
+}

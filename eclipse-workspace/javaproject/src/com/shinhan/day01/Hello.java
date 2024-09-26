@@ -1,0 +1,28 @@
+package com.shinhan.day01;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello~");
+		System.out.println("First java");
+
+
+	}
+
+}
+
+/* 하나의 자바파일은 여러개의 class를 정의할 수 있음 */
+/* 단 public은 1개만 가능, public과 파일명을 맞춰야 됨, public 없다명 파일명을 찾아감    */
+
+class Hello2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello2~");
+		System.out.println("First java2");
+
+
+	}
+
+}

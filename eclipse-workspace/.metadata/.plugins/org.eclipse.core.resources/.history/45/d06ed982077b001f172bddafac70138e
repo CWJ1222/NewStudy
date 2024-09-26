@@ -1,0 +1,18 @@
+package com.shinhan.day01;
+
+public class VariableVariation {
+	int score = 300;
+
+	public static void main(String[] args) {
+		System.out.println("class 변수접근 "+score);
+		int score = 100;
+		method1();
+		System.out.println("main에서 출력 " + score);
+	}
+
+	private static void method1() {
+		int score = 200;
+		System.out.println("method1에서출력 "+score);
+	} //함수를 부르고 나서 함수가 지워진다.
+
+}

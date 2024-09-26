@@ -1,0 +1,114 @@
+package com.shinhan.day02;
+
+import java.util.Scanner;
+
+public class 연산자 {
+
+	public static void main(String[] args) {
+		// method1();
+		// method2();
+		// method3();
+		// method4();
+		// method5();
+		// method6();
+		//method7();
+		method8();
+
+	}
+
+	private static void method8() {
+		//String은 고정문자열이다. 값을 바꾸면 새로운 주소에 객체가 생성
+		//String 에 new 생성시 만들어짐
+		String s1 = new String("Java"); 
+		String s2 = new String("Java"); 
+
+		s1 = s1 + "pro";
+		s2 = s2 + "pro";
+		System.out.println(s1 == s2);// 주소비교
+		System.out.println(s1.equals(s2));
+		System.out.println(System.identityHashCode(s1));
+		System.out.println(System.identityHashCode(s2));		
+	}
+
+	private static void method7() {
+		String s1 = "Java"; // string은 고정문자열이다. 값을 바꾸면 새로운 주소에 객체가 생성됨. 주소 비교라서...
+		String s2 = "Java";
+		// string에 literal을 직접 입력하면 컴파일시 만들어짐, 이미 있는 문자열은 다시 생성하지 않고 존재하는 주소를 사용함
+
+		s1 = s1 + "pro";
+		s2 = s2 + "pro";
+		System.out.println(s1 == s2);// 주소비교
+		System.out.println(System.identityHashCode(s1));
+		System.out.println(System.identityHashCode(s2));
+	}
+
+	private static void method6() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("나눌수, 나누는수 입력>>");
+		int a = sc.nextInt();
+		double b = sc.nextDouble();
+		double result = 0, result2 = 0;
+		if (!Double.isFinite(a / b))
+			result = a / b;
+		if (!Double.isNaN(a % b))
+			result2 = a % b;
+		// result = a / b;
+		// result2 = a % b;
+		System.out.println(result); // Infinity
+		System.out.println(result2); // NaN 이 나옴
+		sc.close();
+	}
+
+	private static void method5() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("나눌수, 나누는수 입력>>");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int result = 0;
+		// if(b!=0) {result a/b;}
+		try {
+			result = a / b; // 오류발생 -> 자바가상머신이 Exception객체를 생성해서 변수에 할당
+		} catch (ArithmeticException ex) { // exception처리가 되면 프로그램은 정상 진행됨, 미처리-중지
+			System.out.println(ex.getMessage());
+		}
+		System.out.println(result);
+		sc.close();
+	}
+
+	/*
+	 * private static void method4() { int a = 5; int b = 0; // 개발시에는 값을 할당하는 것이
+	 * 아니므로 컴파일 오류는 없음, 실행오류 int result = a / b; // ArithmeticException, 정수는 0으로 나눌
+	 * 수 없 }// 실행 오류 시 프로그램 중지됨, 프로그램은 정상 종료되어야 함 // JVM이 RuntimeException을
+	 * 처리해준다.발자가 처리하지 않아도 된다. // Exception 처리를 한다. 오류없도록 값 체크.Exception처리.
+	 * 
+	 * /* int result =0; if(b!=0) result = a/b; 이러면 에러 안남...
+	 * 
+	 * try{ exception이 일어날 가능성이 있는 문장을 넣 result = a/b; } catch(ArithmeticException
+	 * ex){ Exception처리 }
+	 * 
+	 * 
+	 * 
+	 */
+	/*
+	 * private static void method3() { int apple = 1; double pieceUnit = 0.1; int
+	 * number = 7; double result = apple - number * pieceUnit;
+	 * System.out.println("사과1개에서 남은양" + result); } // 부정확함
+	 * 
+	 * private static void method2() { int a = 10, b = 3; System.out.println(++a);
+	 * System.out.println(a++);
+	 * 
+	 * }
+	 * 
+	 * private static void method1() { int a = 10, b = 3; System.out.println(++a +
+	 * b);// 전위연산자는 증감 후 연산 System.out.println(a++ + b);// 연산 후 증감
+	 * 
+	 * a = a + 1;
+	 * 
+	 * ++b; b++; // 한개만 있을 때는 앞이든 뒤든 관계없음, 여러 개 있을 떄 신경써야 함
+	 * 
+	 * System.out.println("a=" + a); System.out.println("b=" + b);
+	 * 
+	 * }
+	 */
+
+}

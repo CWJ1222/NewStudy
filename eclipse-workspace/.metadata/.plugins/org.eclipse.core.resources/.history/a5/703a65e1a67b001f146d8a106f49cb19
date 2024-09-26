@@ -1,0 +1,33 @@
+package com.shinhan.day02;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintStream;
+
+/*
+ * 
+ * java.base 모듈의 java.lang패키지는 import없이 사용
+ * 나머지 클래스 등은 반드시 import한다.
+ * 
+ */
+public class 표준입출력 {
+
+	public static void main(String[] args) {
+	  //rint();
+	  input();
+
+	}
+	
+	private static void input() throws IOException {
+		//표준입력 : 기본은 키보드이다.
+		InputStream a = System.in;
+		int b = a.read();
+		System.out.println(b);
+	}
+
+	/*
+	 * private static void print() { //표준출력 : 기본은 모니터로 되어 있음 PrintStream a =
+	 * System.out; a.println(10); a.println("20"); a.println(false); a.println(a); }
+	 */
+
+}

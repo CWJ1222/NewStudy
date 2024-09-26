@@ -1,0 +1,25 @@
+package com.shinhan.day02;
+
+import java.util.Scanner;
+
+public class nextLine {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Enter your full name: ");
+		String fullName = sc.nextLine(); // 전체 줄을 읽음
+
+		System.out.print("Enter your age: ");
+		int age = sc.nextInt(); // 정수 하나를 읽음
+		sc.nextLine();
+		System.out.print("Major?: ");
+		
+
+		System.out.println("Your name is: " + fullName);
+		System.out.println("Your age is: " + age);
+
+		sc.close();
+	}
+
+}

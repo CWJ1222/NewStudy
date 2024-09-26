@@ -1,0 +1,48 @@
+package com.shinhan.day01;
+
+public class TypeTrans {
+
+	public static void main(String[] args) {
+		// typeTest2();
+		typeTest3();
+
+	}
+
+	private static void typeTest3() {
+		byte a = 10, b = 20, c;
+		//수식에 있는 정수는 int로 자동변형된다.
+		//강제형변
+		c = (byte)(a + b);
+		System.out.println(c);
+
+	}
+	/*
+	 * private static void typeTest() { //1. 자동 형변환 : 큰 타입의 방 = 작은 값 //2.강제형변환 : 작은
+	 * 타입의 방 = (작은타입으로바꿔서)큰값 //byte(1) < short(2) < int(4) < long(8) < float(4) <
+	 * double(8) // char(2) < byte var1 = 97; short var2 = 97; //short char 는 자동형변환
+	 * 불가 char var3 = 97; int var4 = 97; long var5 = 97; float var6 = 97; double
+	 * var7 = 97;
+	 * 
+	 * var4 = var1; //가능함 var6 = var5; System.out.println(var4);
+	 * 
+	 * }
+	 */
+
+	/*
+	 * private static void typeTest2() { // 1. 자동 형변환 : 큰 타입의 방 = 작은 값 // 2.강제형변환 :
+	 * 작은 타입의 방 = (작은타입으로바꿔서)큰값 // byte(1) < short(2) < int(4) < long(8) < float(4)
+	 * < double(8) // char(2) < byte var1 = 97; short var2 = 97; // short char 는
+	 * 자동형변환 불가 char var3 = 97; int var4 = 97; long var5 = 97; float var6 = 97;
+	 * double var7 = 97;
+	 * 
+	 * var4 = var1; // 가능함 var6 = var5; var1 = (byte) var2; // 강제형변환, 앞에 써준다
+	 * 
+	 * // var2 = 130 인데 byte로 강제로 변환하면 데이터가 손실될 수 있음 // var1 이 97이면 var3 = var1이
+	 * 안된다. byte가 char로 형변환이 안됨. // (char)를 붙이면 인식됨
+	 * 
+	 * System.out.println(var4);
+	 * 
+	 * }
+	 */
+
+}

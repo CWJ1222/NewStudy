@@ -1,0 +1,17 @@
+package com.shinhan.day02;
+
+public class print {
+
+	public static void main(String[] args) {
+		int value = 300;
+		System.out.println("Hihihihihi");
+		System.out.println("Hihihihihi");
+		System.out.print("Hihihi");
+		System.out.print("aaaaaaa");
+		System.out.print("\n");
+		System.out.printf("%s", "Hihihihi\n");
+		System.out.printf("%d\n", value);
+		System.out.printf("%d\n", value);
+	}
+
+}

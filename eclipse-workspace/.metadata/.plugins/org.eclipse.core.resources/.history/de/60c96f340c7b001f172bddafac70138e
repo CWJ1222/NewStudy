@@ -1,0 +1,90 @@
+package com.shinhan.day01;
+
+/* 
+ * 정수 : byte short char int long
+ * 실수 : float double
+ * 논리 : boolean
+ * 
+ * */
+
+public class VariableType {
+
+	public static void main(String[] args) {
+
+		System.out.println("main start");
+//		f1();
+		// f2();
+		// f3();
+		// f4();
+		// f5();
+		// f6();
+		f7();
+
+		System.out.println("main fin");
+
+	}
+
+	private static void f7() {
+		// 변수선언
+		boolean flag,flag2, flag3, flag4, flag5, flag6;
+		int a = 10, b = 20;
+		// 변수에 값 할당
+		flag = true;
+		flag = false;
+		flag = a < b;
+		flag2 = a == b;
+		// 변수사용 ~ 초기화하지 않은 변수를 사용불가
+		flag3 = a>=10 && ++b>=20;
+		flag4 = a<10 || ++b>=20;
+		
+		System.out.println(flag);
+		System.out.println(flag2);
+		System.out.println(flag3);
+		System.out.println(flag4);
+		//System.out.println(flag5);
+		//System.out.println(flag6);
+	}
+
+	/*
+	 * private static void f6() { //실수 : 소숫점이 있음 //float 4byte, f, F, , double 8byte
+	 * //literal 기본타입은 double float data = 3.14f; double data2 = 3.14; double data3
+	 * = 3; float data4 = 3L;//long은 8바이트지만 저장방식이 달라 float에 저장가능함.(정수부 +가수부)
+	 * 
+	 * System.out.println(data); System.out.println(data2);
+	 * System.out.println(data3); System.out.println(data4); }
+	 */
+
+	/*
+	 * private static void f4() { // int 4byte : System.out.println("---int---"); //
+	 * 기본형타입 int + 기능추가 ->Integer Wrapper class // literal(값) : 기본타입은 int int score
+	 * = Integer.MAX_VALUE; score = score + 1; score += 1; score++;
+	 * System.out.println("score=" + score);
+	 * 
+	 * }
+	 */
+
+	/*
+	 * private static void f5() { // long 8byte : System.out.println("---long---");
+	 * // 기본형타입 long + 기능추가 ->Integer Wrapper class // literal(값) : 기본타입은 int long
+	 * score = 2147483648L;//마지막에 L, 붙이면 long이 된다. score = score + 1; score +=
+	 * 1;//복합대입연산 score++; System.out.println("score=" + score);
+	 * 
+	 * }
+	 */
+
+	/*
+	 * private static void f3() { //char (2byte) 단일문자 0 ~ 65535 //char grade = '
+	 * ';//빈문자불가 char grade = 'A' ;//빈문자불가 grade = 65; grade = 73; grade = 0x0041;
+	 * grade++;//정수라서계산 System.out.println("grade="+grade); }
+	 */
+}
+/*
+ * private static void f2() { // short (2byte) -32768~32767 // 1. 변수선언 + 할당
+ * short score = Short.MAX_VALUE; score++; score += 2;
+ * System.out.println("score=" + score); } }
+ */
+/*
+ * private static void f1() { System.out.println("---byte----"); // 변수선언 byte
+ * score; // -128~127 // 2. 변수값을 할당 : 메모리에 저장한다. score = 127; score++; // 3.
+ * 변수사용 System.out.println("score=" + score);// 문자+숫자 => 문자 } }
+ */
