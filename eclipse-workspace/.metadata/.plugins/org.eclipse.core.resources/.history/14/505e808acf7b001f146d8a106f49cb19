@@ -1,0 +1,20 @@
+package com.shinhan.day02;
+
+public class 예제3 {
+
+	public static void main(String[] args) {
+		cal1l();
+
+	}
+
+	private static void cal1l() {
+		int total = 0;
+		for (int su = 1; su <= 100; su++) {
+			if(su%3 == 0) {
+			total = total + su
+			}
+		}
+		System.out.println(total);
+	}
+
+}

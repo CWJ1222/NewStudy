@@ -1,0 +1,28 @@
+package com.shinhan.day02;
+
+public class 삼항연산자 {
+
+	public static void main(String[] args) {
+		// method1();
+		method2();
+	}
+
+	private static void method2() {
+		int a = 11;
+		String result = a % 2 == 0 ? "짝" : "홀";
+		
+		System.out.printf("%d는 %s입니다. \n", a, a % 2 == 0 ? "짝" : "홀");//간단한 것은 삼항연산자 사용
+		System.out.printf("%s",result);
+	}
+
+	private static void method1() {
+		int a = 10; // 짝 홀 판별, 2로 나눈 나머지가 0,1에따라 짝홀
+		if (a % 2 == 0) {
+			System.out.printf("%d는 짝\n", a);
+		} else {
+			System.out.printf("%d는 홀\n", a);
+
+		}
+
+	}
+}

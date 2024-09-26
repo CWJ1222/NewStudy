@@ -1,0 +1,28 @@
+package com.shinhan.day02;
+
+public class 삼장확인문제 {
+
+	public static void main(String[] args) {
+		int pencils = 534;
+		int students = 30;
+		//한 명이 가지는 연필 수
+		int pencilsPerStudent = (pencils / students);
+		System.out.println(pencilsPerStudent);
+
+		//남은 연필 수
+		int pencilsLeft = (pencils % students);
+		System.out.println(pencilsLeft);
+		
+		int value = 356;
+		System.out.println(value /10 * 10);
+		
+		
+		int lengthTop = 5;
+		int lengthBottom = 10;
+		int height = 7;
+		double area = ((lengthTop+lengthBottom)*height*1.0/2);
+		System.out.println(area);
+		
+	}
+	
+}

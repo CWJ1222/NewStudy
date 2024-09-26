@@ -1,0 +1,40 @@
+package com.shinhan.day02;
+
+public class 반복문 {
+
+	public static void main(String[] args) {
+		// call();
+		call2();
+
+	}
+
+	private static void call2() { // 1~100
+		int total = 0;
+		for (int su = 1; su <= 100; su++) {
+			total += su;
+		}
+		System.out.println(total);
+	}
+
+	private static void call() {
+		// 1. for(초기값;조건;증감)문, 같은 구문을 반복할 경우, 다생략하면 무한 반복.
+		int i;
+		i = 1;
+		for (;;) {
+			System.out.printf("----%d-------\n", i);
+
+			if (i == 10)
+				break;
+			i++;
+		}
+
+	}
+
+}
+/*
+ * 
+ * int i; for(i=1;i<=10;i++){ {System.out.println("------"+i); }
+ * System.out.println("i="+i); }
+ * 
+ * 
+ */

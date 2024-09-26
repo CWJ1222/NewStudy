@@ -1,0 +1,24 @@
+package com.shinhan.day02;
+
+public class 반복문 {
+
+	public static void main(String[] args) {
+		call();
+
+	}
+
+	private static void call() {
+		// 1. for(초기값;조건;증감)문, 같은 구문을 반복할 경우, 다생략하면 무한 반복.
+		int i;
+		i = 1;
+		for (;;) {
+			System.out.printf("----%n-------\n",i);
+		
+			if (i == 10)
+				break;
+			i++;
+		}
+
+	}
+
+}

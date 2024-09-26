@@ -1,0 +1,18 @@
+package com.shinhan.day02;
+
+public class 삼항연산자 {
+
+	public static void main(String[] args) {
+		method1();
+	}
+
+	private static void method1() {
+		int a = 10; // 짝 홀 판별, 2로 나눈 나머지가 0,1에따라 짝홀
+		if(a%2==0) {
+		System.out.println("%d는 짝\n",a);
+		}else {
+			System.out.println("%d는 홀\n",a);
+
+	}
+
+}

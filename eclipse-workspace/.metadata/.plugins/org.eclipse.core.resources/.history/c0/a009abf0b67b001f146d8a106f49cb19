@@ -1,0 +1,33 @@
+package com.shinhan.day02;
+
+public class 조건문 {
+
+	public static void main(String[] args) {
+		call();
+	}
+
+	private static void call() {
+		int data = 10;
+		if (data % 3 == 0) {
+			System.out.println("3의배수");
+			System.out.println("!!!!!!!");
+
+
+		} else {
+			System.out.println("3의배수아님");
+		}
+		System.out.println("END");
+	}
+
+}
+
+/*
+ * 
+ * 실행문이 한줄일 때는 중괄호 제외 가
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */

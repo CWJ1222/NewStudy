@@ -1,0 +1,136 @@
+package com.shinhan.day02;
+
+public class 반복문 {
+
+	public static void main(String[] args) {
+		// call();
+		// call2();
+		// call3();
+		// call4();
+		// call5();
+		// call6();
+		// call7();
+		//call8();
+		call9();
+
+	}
+
+	private static void call9() {
+		/*
+		 *  2 1=2 3 1=3 ... 9 1=9
+		 *  2 2=4 3 2=6 ... 9 2=9
+		 * 
+		 * 
+		 * 
+		 * */
+		for (int gop = 1; gop <= 9; gop++)
+	 {
+			for (int dan = 2; dan <= 9; dan++) {
+				System.out.printf("%2d * %2d = %2d\n", dan, gop, dan * gop);
+			}
+		}
+		
+	}
+
+	private static void call8() {
+		//구구단 2~9
+		// int dan = 9;
+		/*
+		 * 
+		 * 9 * 1 = 9 9 * 2 = 18
+		 * 
+		 * 
+		 */
+		for (int dan = 2; dan <= 9; dan++) {
+			System.out.println("--------" + dan + "---------");
+			if (dan == 4)
+				continue; // 4단이면 아래 실행안함. 위로 올라감.
+			// if(dan==4) break; 4단 이후 제외(이후 : 포함?OK)
+			for (int gop = 1; gop <= 9; gop++) {
+				System.out.printf("%2d * %2d = %2d\n", dan, gop, dan * gop);
+			}
+		}
+
+	}
+
+	private static void call7() {
+		int i;
+		for (i = 0; i <= 100; i += 5) {
+			// if(i==15) break; //15되면 멈추기, 반복문 빠져나가
+			// if(i!=15) {
+			// System.out.println(i);} //15만 안찍
+			if (i == 15)
+				continue; // 아래문장들은 무시하고 반복문은 계속(continue는 위로 올라간다)
+			System.out.println(i);
+
+		}
+		System.out.println("----------------");
+	}
+
+	private static void call6() {
+		// 1~5 출력
+		int su = 1;
+		do {
+			System.out.println(su);
+			su++;
+
+		} while (su >= 5);
+	}
+
+	private static void call5() {
+		// 1~5 출력
+		int su = 1;
+		while (su <= 5) {
+			System.out.println(su);
+			su++;
+		}
+	}
+
+	private static void call4() {
+		// 1~5 출력
+		for (int su = 1; su <= 5; su++) {
+			System.out.println(su);
+
+		}
+	}
+
+	private static void call3() {
+		int total = 0, total2 = 0;
+		for (int su = 1, su2 = 5; su <= 100; su++, su2 += 5) {
+			total += su;
+			total2 += su2;
+		}
+		System.out.println(total);
+		System.out.println(total2);
+	}
+
+	private static void call2() { // 1~100 합 구하기
+		int total = 0;
+		for (int su = 1; su <= 100; su++) {
+			total += su;
+		}
+		System.out.println(total);
+	}
+
+	private static void call() {
+		// 1. for(초기값;조건;증감)문, 같은 구문을 반복할 경우, 다생략하면 무한 반복.
+		int i;
+		i = 1;
+		for (;;) {
+			System.out.printf("----%d-------\n", i);
+
+			if (i == 10)
+				break;
+			i++;
+		}
+
+	}
+
+}
+/*
+ * 
+ * int i; for(i=1;i<=10;i++){ {System.out.println("------"+i); }
+ * System.out.println("i="+i); }
+ * 
+ * 
+ */
