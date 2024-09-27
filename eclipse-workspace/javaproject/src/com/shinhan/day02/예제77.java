@@ -1,0 +1,52 @@
+package com.shinhan.day02;
+
+import java.util.Scanner;
+
+public class 예제77 {
+
+	public static void main(String[] args) {
+		call();
+	}
+
+	private static void call() {
+		int num;
+		Scanner sc = new Scanner(System.in);
+		boolean isStop = false;
+		int balance = 0;
+		while(!isStop) {
+			menu();
+			System.out.println("선택> ");
+			int jobSelect = sc.nextInt();
+			switch(jobSelect) {
+			case 1 -> {
+				System.out.println("예금을 입력하시오 \n");
+				int amount = sc.nextInt();
+				balance += amount;
+			}
+			case 2 -> {
+				System.out.println("출금을 입력하시오 \n");
+				int amount = sc.nextInt();
+				balance -= amount;
+			}
+			case 3 -> {
+				System.out.println("잔고: "+balance);
+			}
+			case 4 -> {
+				isStop = true;
+			}
+			default ->{
+				System.out.println("유효하지 않은 작업, 재입력바람");
+			}
+			}
+		}
+		System.out.println("종료됨");
+		sc.close();
+	}
+
+	private static void menu() {
+		System.out.println("-----------------------------");
+		System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
+		System.out.println("-----------------------------");		
+	}
+
+}

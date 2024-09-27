@@ -14,7 +14,7 @@ public class 삼장확인문제 {
 		System.out.println(pencilsLeft);
 		
 		int value = 356;
-		System.out.println(value /10 * 10);
+		System.out.println(value /100 * 100);
 		
 		
 		int lengthTop = 5;

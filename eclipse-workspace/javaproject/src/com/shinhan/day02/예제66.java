@@ -1,0 +1,18 @@
+package com.shinhan.day02;
+
+public class 예제66 {
+
+	public static void main(String[] args) {
+		call();
+	}
+
+	private static void call() {
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("★");
+			}
+			System.out.println();
+		}
+	}
+
+}

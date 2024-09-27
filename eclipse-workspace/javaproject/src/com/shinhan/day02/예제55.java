@@ -8,13 +8,14 @@ public class 예제55 {
 	}
 
 	private static void call() {
-for(int i=1;i <=10;i++) {
-	
-	for(int j=1;j <=10; j++) {
-		if(4*i + 5*j == 60) {
-		System.out.println("i="+i+" j="+j);}
-	}
-}
+		for (int i = 1; i <= 10; i++) {
+
+			for (int j = 1; j <= 10; j++) {
+				if (4 * i + 5 * j == 60) {
+					System.out.println("i=" + i + " j=" + j);
+				}
+			}
+		}
 	}
 
 }

@@ -1,0 +1,48 @@
+package com.shinhan.day03;
+
+import java.util.Scanner;
+
+public class LABq3 {
+
+	public static void main(String[] args) {
+		call();
+
+	}
+
+	private static void call() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("숫자를 입력하세요 : ");
+		int num = sc.nextInt();
+		int total = 0;
+		if (num % 2 == 1) {
+			for (int i = 1; i <= num; i += 2) {
+				total += i;
+			}
+		} else {
+			for (int i = 0; i <= num; i += 2) {
+				total += i;
+			}
+
+
+			System.out.printf("결과값 :" + total);
+
+			sc.close();
+
+		}
+
+	}
+}
+/*
+ * Scanner sc = new Scanner(System.in); System.out.print("숫자를 입력하세요 : ");
+ * 
+ * int total = 0;
+ * 
+ * int end = sc.nextInt(); int start; if(end%2==0){ start=2; else{ start=1; }
+ * for(int su=1;su<=end;su+=2){ total += su; } System.out.println("결과값 :"+
+ * total);
+ * 
+ * sc.close();
+ * 
+ * 
+ * 
+ */

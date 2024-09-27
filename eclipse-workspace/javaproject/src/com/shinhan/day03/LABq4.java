@@ -1,0 +1,32 @@
+package com.shinhan.day03;
+
+public class LABq4 {
+
+	public static void main(String[] args) {
+		hokeyGraphics('$', 4, false); // 함수호출(값을 전달)
+
+	}
+
+	private static void hokeyGraphics(char cell, int size, boolean isRect) {
+
+		if (isRect) {
+			for (int row = 1; row <= size; row++) {
+				for (int col = 1; col <= size; col++) {
+					System.out.print(cell);
+				}
+				System.out.println();
+			}
+		} else {
+			for (int row = 1; row <= size; row++) {
+				for (int col = 1; col <= row; col++) {
+					System.out.print(cell);
+				}
+				System.out.println();
+
+			}
+
+		} // 함수정의
+
+	}
+}
+//불리언인 경우 == 로 true인지 비교할 필요 없다.
