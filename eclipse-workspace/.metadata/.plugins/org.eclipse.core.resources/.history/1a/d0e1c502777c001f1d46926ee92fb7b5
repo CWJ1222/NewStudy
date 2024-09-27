@@ -1,0 +1,57 @@
+package com.shinhan.day03;
+
+import java.util.Scanner;
+
+public class LAB2q2 {
+	static Scanner sc;
+
+	public static void main(String[] args) {
+		sc = new Scanner(System.in);
+		// q1();
+		q3();
+		sc.close();
+	}
+
+	private static void q3() {
+		System.out.print("1보다 크 10 사이의 정수를 입력하라 : ");
+		int num = sc.nextInt();
+		if (num < 2 || num > 9) {
+			System.out.println("잘못된 숫자가 입력되었습니다.");
+			return;
+
+		}
+		for (int i = 1; i <= num; num++) {
+			System.out.printf("%d ! = %d ", i, factorial(i));
+
+		}
+	}
+
+//함수끝나고 돌아갈 때 int값을 가지고 간다.
+	private static int factorial(int su) {
+		int answer = 1;
+		for (int i = 1; i <= su; i++) {
+			answer *= i;
+
+		}
+		return answer;
+	}
+
+	private static void q1() {
+		boolean isPrime = true;
+		System.out.print("2에서 100 사이의 정수를 입력하라 : ");
+		int su = sc.nextInt();
+
+		for (int i = 2; i < su; i++) {
+			if (su % i == 0) {
+				isPrime = false;
+				break;
+			}
+		}
+
+		/*
+		 * for(int i=2; i<=Math.sqrt(num); i++) { if(num%i == 0) isPrime = false; }
+		 */
+		System.out.println(isPrime ? "소수" : "소수아님");
+	}
+
+}

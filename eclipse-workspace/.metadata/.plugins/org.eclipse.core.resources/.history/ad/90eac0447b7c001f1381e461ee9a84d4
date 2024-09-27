@@ -1,0 +1,111 @@
+package com.shinhan.day03;
+
+import java.util.Scanner;
+
+public class LAB2q234567 {
+	static Scanner sc;
+
+	public static void main(String[] args) {
+		sc = new Scanner(System.in);
+		// q1();
+		// q3();
+		// q4();
+		// q5();
+		q6();
+		sc.close();
+	}
+
+	private static void q6() {
+		// 평년이면 29일, 윤년이면 28
+		int year = 2024;
+
+		if (year % 4 == 0 && year % 100 != 0 || year % 100 == 0 && year % 400 == 0) {
+			System.out.println("윤년");
+		} else {
+			System.out.println("평년");
+		}
+	}
+
+	private static void q5() {
+		final int GOAL_NUM = 15; // 목표 값, 안바꿀 값은 구분되게 하는 것이 좋
+		int i = 0; // 증가분
+		int current_step = 0; // 현재 반복 횟수, GOAL_NUM까지 가기 위
+		int result = 1; // 수열 + 증가분
+		int total = 0; // 증가된 수열의 합
+		while (current_step < GOAL_NUM) {
+			result += i++;
+			current_step++;
+			total += result;
+		}
+		System.out.printf("%d번째까지의 합: %d", GOAL_NUM, total);
+	}
+
+	private static void q4() {
+		int count = 0, total = 0;
+		System.out.print("양의 정수를 입력하라 : ");
+		int num = sc.nextInt();
+
+		for (int i = num; i <= 1000; i += num) {
+			count++;
+			total += i;
+		}
+		System.out.println();
+		System.out.println(num + "의 배수 개수=" + count);
+		System.out.println(num + "의 배수 합=" + total);
+
+		/*
+		 * int count2 = 1000/num int sum =
+		 * 
+		 * 수학적으로 먼저 생각해서접근하는 게 좋음. 무조건 for로 반복시킬 필요는 없
+		 */
+
+	}
+
+	private static void q3() {
+		System.out.print("1보다 크 10 사이의 정수를 입력하라 : ");
+		int num = sc.nextInt();
+		if (num < 2 || num > 9) {
+			System.out.println("잘못된 숫자가 입력되었습니다.");
+			return;
+
+		}
+		for (int i = 1; i <= num; i++) {
+			System.out.printf("%d ! = %d ", i, factorial(i));
+			System.out.println();
+		}
+	}
+
+//함수끝나고 돌아갈 때 int값을 가지고 간다.
+	/*
+	 * private static int factorial(int su) { int answer = 1; for (int i = 1; i <=
+	 * su; i++) { answer *= i;
+	 * 
+	 * } return answer; // return에 돌아갈 값을 넣는다. }
+	 */
+	private static int factorial(int su) {
+		int answer = 1;
+		if (su == 1)
+			return 1;
+		else
+			return su * factorial(su - 1);
+	}
+
+	private static void q1() {
+		boolean isPrime = true;
+		System.out.print("2에서 100 사이의 정수를 입력하라 : ");
+		int su = sc.nextInt();
+
+		for (int i = 2; i < su; i++) {
+			if (su % i == 0) {
+				isPrime = false;
+				break;
+			}
+		}
+
+		/*
+		 * for(int i=2; i<=Math.sqrt(num); i++) { if(num%i == 0) isPrime = false; }
+		 */
+		System.out.println(isPrime ? "소수" : "소수아님");
+	}
+
+}

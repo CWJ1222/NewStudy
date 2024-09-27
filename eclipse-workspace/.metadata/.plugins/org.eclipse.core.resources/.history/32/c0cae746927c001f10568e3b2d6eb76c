@@ -1,0 +1,73 @@
+package com.shinhan.day03;
+
+import java.util.Scanner;
+
+public class ReferenceTest {
+
+	public static void main(String[] args) {
+		// f1();
+		// f2();
+		// f4(null);
+		f5();
+
+	}
+
+	private static void f5() {
+		String s1 = "신한DS 금융소프트아카데미";
+		System.out.println("문자열 길이 :" + s1.length());
+		System.out.println("문자열 길이 :" + s1.charAt(5));
+		System.out.println("문자열 길이 :" + s1.substring(4));
+	}
+
+	private static void f4(String param) {
+		// 1. 객체참조변수 선언
+		String s1 = param;
+		// 2. 변수초기화
+		// 3. 변수사용... 반드시 초기화후 사용가능
+		// 결정되지 않았을 때는 null을 준다.
+		System.out.println(s1); // null인 경우 아직 참조하고 있지 않다., 기능이용불가
+
+		if (s1 != null)
+			System.out.println(s1.length());
+		else
+			System.out.println("참조된 값이 없음");
+	}
+
+	private static void f3() {
+		char c1 = 'A';
+		char c2 = 'A';
+		// 컴파일 시 객체생성하고 이미 생성된 리터럴과 같으면 재사용
+		String s1 = "자바";
+		String s2 = "자바";
+		// 실행시 객체생성
+
+		String s3 = new String("자바");
+		String s4 = new String("자바");
+		System.out.println(c1 == c2); // 기본형이므로 값을 비교
+		System.out.println(s1 == s2); // 참조형이므로 주소를 비교
+		System.out.println(s3 == s4); //
+		System.out.println(s1 == s4); // 값비교는 기능을 이용해야..
+
+	}
+
+	private static void f2() {
+		Scanner a = new Scanner(System.in);
+		Scanner b = new Scanner(System.in);
+
+		System.out.println(a == b); // 주소가 다르다
+		System.out.println(a != b); // 주소가 다르다
+
+	}
+
+	private static void f1() {
+		// 기본형이 아니면 참조형이다.
+		int a = 10;// stack에 저장
+		// Integer b = new Integer(20); 지금은 이렇게 안쓴
+		Integer b = 20; // 기본형기능(값할당, 연산, 비교) + 기타기능 .... Heap영역에 저장됨
+
+		System.out.println(b.compareTo(30));
+		System.out.println(b.compareTo(10));
+
+	}
+
+}

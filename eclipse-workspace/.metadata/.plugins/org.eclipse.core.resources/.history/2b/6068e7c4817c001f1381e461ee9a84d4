@@ -1,0 +1,38 @@
+package com.shinhan.day03;
+
+import java.util.Scanner;
+
+public class LAB3 {
+	static Scanner sc;
+//args 명령행 매개변수
+	public static void main(String[] args) {
+		sc = new Scanner(System.in);
+		q1();
+		sc.close();
+	}
+
+	private static void q1() {
+		printSeason(10);
+	}
+
+	private static void printSeason(int month) {
+		String message = "";
+		switch (month) {
+		case 12, 1, 2 -> {
+			message = "겨울";
+		}
+		case 3, 4, 5 -> {
+			message = "봄";
+		}
+		case 6, 7, 8 -> {
+			message = "여름";
+		}
+		case 9, 10, 11 -> {
+			message = "가을";
+		}
+		default -> {
+			message = "월 오류";
+		}
+		}
+	}
+}

@@ -1,10 +1,28 @@
 package com.shinhan.day03;
 
+import java.util.Scanner;
+
 public class LAB2q1 {
+	static Scanner sc;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		sc = new Scanner(System.in);
+		q1();
+		sc.close();
+	}
 
+//void 는 리턴할 값이 없다는 것. 리턴을 안하는 것이 아
+	private static void q1() {
+		System.out.print("1보다 크고 10보다 작은 정수를 입력하라 : ");
+		int su = sc.nextInt();
+		if (su < 2 || su > 9) {
+			System.err.println("잘못된 숫자가 입력되었습니"); // 출력은 같은데 색만 다르
+			return; // 함수빠지기, 호출한 곳으로 돌아간다.
+		}
+		for (int gop = 1; gop <= 9; gop++) {
+			// System.out.println(su + "*" + gop + "=" + su * gop);
+			System.out.printf("%2d*%2d=%2d\n", su, gop, su * gop);
+		}
 	}
 
 }

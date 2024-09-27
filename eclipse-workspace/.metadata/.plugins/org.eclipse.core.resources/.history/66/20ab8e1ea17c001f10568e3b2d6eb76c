@@ -1,0 +1,24 @@
+package com.shinhan.day03;
+
+public class 오장LAB {
+
+	public static void main(String[] args) {
+		f1();
+
+	}
+
+	private static void f1() {
+		int[] arr = { 3, 24, 1, 55, 17, 43, 5 };// 순서대로 비교해서 하는 방법 선택
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[i] < arr[j]) {
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+
+	}
+
+}
