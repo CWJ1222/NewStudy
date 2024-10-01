@@ -1,0 +1,32 @@
+package com.shinhan.day04;
+
+public class Korean {
+	
+	//1. field : 변수(값저장)
+	private String nation="대한민국";
+	private String name; //new 하면 null이 만들어
+	private String ssn;
+	
+	
+	//2. constructor 생성자 만들어준다. 우클릭 - source - generate constructor
+	public Korean(String name, String ssn) {
+		super();
+		this.name = name;
+		this.ssn = ssn;
+	}
+	
+	String f() {
+		return nation;
+	}
+	
+//	Korean(String name, String ssn){
+	//	this.name = name;
+	//	this.ssn = ssn;
+		
+//	}
+	
+	
+	
+	
+	
+}

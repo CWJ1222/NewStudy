@@ -1,0 +1,20 @@
+package Coding;
+
+public class 오장7번 {
+
+	public static void main(String[] args) {
+				f1();
+	}
+
+	private static void f1() {
+		int [] array = {1, 5, 3, 8, 2};
+		int max = Integer.MIN_VALUE;
+		for (int su : array)
+			{
+				if(su > max){max = su;}
+			}
+			System.out.println(max);
+		}		
+	}
+
+

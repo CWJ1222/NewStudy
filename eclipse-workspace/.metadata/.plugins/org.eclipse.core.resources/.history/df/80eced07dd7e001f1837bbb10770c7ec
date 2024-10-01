@@ -1,0 +1,13 @@
+package com.shinhan.day04;
+
+public class Calculator {
+
+	//1.field : 특징, object들의 공통된 속성, 변수
+	String model;
+	String color;
+	int price;
+	
+	//2.constructor ... default 생성자는 컴파일시 만들어짐
+	
+	
+}

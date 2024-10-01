@@ -1,0 +1,22 @@
+package com.shinhan.day04;
+
+public class Car {
+
+	//1.필드 field : 속성, 변수선언, object들의 공통특성
+	String model;
+	String color;
+	int price;
+	
+
+	void go(){
+		System.out.println("직진");
+	}
+	void back(){
+		System.out.println("후진");
+	}
+	void stop(){
+		System.out.println("정지");
+	}
+	
+}
+

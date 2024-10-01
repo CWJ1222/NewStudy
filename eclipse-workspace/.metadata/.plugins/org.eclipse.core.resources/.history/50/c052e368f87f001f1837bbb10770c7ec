@@ -1,0 +1,46 @@
+package Coding;
+
+public class 오장7번 {
+
+	public static void main(String[] args) {
+//		f1();
+	//	f2();
+		f3();
+	}
+
+	private static void f3() {
+		int max = 0;
+		int [] array = {1, 5, 3, 8, 2};
+	//	int max = 0;
+
+		for(int i = 0; i < array.length;i++){
+			if(max<array[i]){
+				max = array[i];
+				}
+				System.out.println("max: " + max);
+				}
+			}		
+	
+
+	private static void f2() {
+		int [] array = {1, 5, 3, 8, 2};
+		int max = Integer.MIN_VALUE;
+		for(int su : array)
+			{
+				max = su > max ? su : max;
+			}
+			System.out.println(max);
+		}
+	
+
+	private static void f1() {
+		int[] array = { 1, 5, 3, 8, 2 };
+		int max = Integer.MIN_VALUE;
+		for (int su : array) {
+			if (su > max) {
+				max = su;
+			}
+		}
+		System.out.println(max);
+	}
+}

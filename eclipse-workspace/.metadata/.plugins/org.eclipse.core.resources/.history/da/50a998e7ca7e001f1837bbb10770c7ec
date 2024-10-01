@@ -1,0 +1,17 @@
+package com.shinhan.day04;
+
+public class 오장문풀 {
+
+	public static void main(String[] args) {
+		f1();
+
+	}
+
+	private static void f1() {
+		char[] arr = new char[3];
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
+		System.out.println(arr[2]);
+	}
+
+}

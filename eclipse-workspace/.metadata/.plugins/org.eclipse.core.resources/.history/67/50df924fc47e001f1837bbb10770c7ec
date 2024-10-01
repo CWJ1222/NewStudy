@@ -1,0 +1,17 @@
+package com.shinhan.day04;
+
+public class EnumTest {
+
+	public static void main(String[] args) {
+		f1();
+	}
+
+	private static void f1() {
+//상수:한번할당 후 수정불가
+//예, 원의 넓이 = 반지름 * 반지름 * 3.14(PI)
+		int r = 10;
+		double area = r*r*Math.PI;
+		System.out.println(area);
+	}
+
+}

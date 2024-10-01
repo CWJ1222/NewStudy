@@ -1,0 +1,12 @@
+package com.shinhan.day04;
+
+public class KoreanTest {
+
+	public static void main(String[] args) {
+		Korean k1 = new Korean("홍길동", "12345");
+		System.out.println(k1.getNation());
+		k1.setNation("aaa");
+		System.out.println(k1.getNation());
+	}
+
+}

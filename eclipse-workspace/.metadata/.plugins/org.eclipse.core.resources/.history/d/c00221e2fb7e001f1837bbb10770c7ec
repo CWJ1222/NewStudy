@@ -1,0 +1,10 @@
+package com.shinhan.day04.lab;
+
+public class EmplyeeTest {
+
+	public static void main(String[] args) {
+		Employee emp = new Employee("123", "홍길동", 1000);
+		System.out.println(emp.getSalary(10));
+	}
+
+}

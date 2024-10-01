@@ -1,0 +1,68 @@
+package com.shinhan.day04;
+
+public class 오장문풀 {
+
+	public static void main(String[] args) {
+		// f1();
+		// f6();
+//		f7();
+		f8();
+
+	}
+
+	private static void f8() {
+		int [][] array= {
+				{95, 86},
+				{83,92,96},
+				{78,83,93,87,88}
+		};
+		int total = 0;
+		int cnt=0;
+		
+		for(int[] datas:array) {
+			for (int data:datas) {
+				cnt ++; total += data;
+			}
+		}
+		System.out.println("총점 = "+total);
+		System.out.println("평 = "+(double)total/cnt);
+	}
+
+	private static void f7() {
+		int[] array = { 1, 5, 3, 8, 2, 9999 };
+		int max = Integer.MIN_VALUE;
+		for (int su : array) {
+			/*
+			 * if (su > max) { max = su; } 삼항 연산자로 바꾸는게 나음
+			 *
+			 */
+			max = su > max ? su : max;
+		}
+		System.out.println(max);
+	}
+
+	private static void f6() {
+		int[][] array = { { 95, 86 }, { 83, 92, 96 }, { 78, 83, 93, 87, 88 } };
+		System.out.println(array.length); // 2차원 : 1차원이 1차원임을 강조
+		System.out.println(array[2].length);
+		for (int[] datas : array) {
+			for (int data : datas) {
+				System.out.print(data + "\t");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void f1() {
+		char[] arr = new char[3];
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
+		System.out.println(arr[2]);
+	}
+
+	/*
+	 * private static void f1() { String[] arr = new String[3];
+	 * System.out.println(arr[0]); System.out.println(arr[1]);
+	 * System.out.println(arr[2]); }
+	 */
+}
