@@ -1,0 +1,12 @@
+package com.shinhan.day05;
+
+public class ComputerTest2 {
+
+	public static void main(String[] args) {
+		Computer com = new Computer();
+		com.sum();
+		int result = com.sum(1, 2);
+		System.out.println("result = "+result);
+	}
+
+}

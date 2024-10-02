@@ -1,0 +1,16 @@
+package com.shinhan.day06;
+
+import com.shinhan.day05.Phone;
+
+public class ModifierTest2 extends Phone{ 
+	//extends 로 상속받으면 모두 사용할수 있음
+	//public아니어도 사용 가능
+
+	void test() {
+		System.out.println(a +b );
+		print1();
+		print2();
+
+	}
+
+}

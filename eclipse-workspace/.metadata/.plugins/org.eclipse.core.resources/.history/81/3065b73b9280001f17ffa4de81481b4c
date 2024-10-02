@@ -1,0 +1,14 @@
+package com.shinhan.day05.exercise;
+
+public class PrinterTest {
+
+	public static void main(String[] args) {
+		Printer p = new Printer();
+		p.println(false);
+		p.println(100);
+		p.println(3.14);
+		p.println("자바");
+
+	}
+
+}

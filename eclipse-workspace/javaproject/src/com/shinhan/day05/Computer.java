@@ -1,0 +1,122 @@
+package com.shinhan.day05;
+
+//class 는 틀 : template, object들을 만들기 위한 정의
+
+//공통특성이 담겨 있음
+//object 클래스들을 이용해서 만든 독립된 개체(field 값이 다르다), new로 생성
+
+public class Computer {
+	// 1. 필드(특징, 속성, 변수:멤버(object)변수, static변수)
+	// 멤버마다 값이 다르다.
+
+	private String productName;
+	private String os;
+
+	private int price; // private해주는 것이 좋다.
+	
+	static int count;
+	// JAvabeans 기술 spec field의 접근기정자(modifier):private -> 접근은 getter setter사용함
+
+	// 2. 생성자 constructor, new시 자동호출되는 함수(method),
+	// 이때 자동 초기화(기본형: 정수 0, 실수 0.0, boolean false,
+	// 정의가 없으면 컴파일 시 자동으로 추가됨 Computer(){}
+	// 정의하면 자동 추가되지 않음
+
+	// 둘다 작동시키려면 오버로딩이 필요함. 이름같고 매개변수 사양이 다른 경우
+	// 매개변수 이름과 출력이름이 충돌하는 경우 객체자신을 this라고 함
+	// 생성장를 호출하는 문장은 첫줄에만 사용해야한다.(super가 생략되어 있는데 두번
+	// 적용되기 때문이다.)
+	Computer() {
+		this(null, null, 0);
+		System.out.println("Computer ... default 생성자");
+	}
+
+	/*
+	 * Computer() { System.out.println("Computer ... default 생성자"); }
+	 */
+	// 하나의 생성자가 같은 이름의 다른 모양의 생성자를 호출. this()사용
+
+	Computer(String productName, String os) {
+		this(productName, os, 0);
+	}
+
+	/*
+	 * Computer(String productName, String os){ this.productName = productName;
+	 * //두개만 필요한 경우 this.os = os; this.price = 50; }
+	 */
+	Computer(String productName, String os, int price) {
+		count++;
+		this.productName = productName; // 매개변수 이름과 출력이름이 같은 경우 충돌
+		this.os = os;
+		this.price = price;
+	}
+
+	// 메서드들..
+	// 메서드는 이름과 리턴타입이 필수, 리턴 없으면 void
+	// {}는 블럭은 문장들의 묶음
+
+	// 이름은 같은데 매개변수 사양 다를
+	void sum() {
+		System.out.println("argument가 없는 sum method");
+	}
+
+	int sum(int a, int b) {
+		System.out.println("argument가 2개인  sum method");
+		return a + b;
+	}
+
+	// 가변길이 매개변수(배열)
+	int sum(int...arr) {
+		int total = 0;
+		for (int su : arr) {
+			total += su;
+		}
+		return total;
+		//리턴 이후에는 문장이 올 수 없음
+	}
+
+	String sum(int a, int b, int c) {
+		System.out.println("argument가 3개인  sum method");
+		return a + b + c + "";
+	}
+
+	public void infoPrint() {
+		System.out.println("-----Computer 정보---");
+		System.out.println(getProductName() + ":" + productName);
+		System.out.println(getOs() + ":" + os);
+		System.out.println(getPrice() + ":" + price);
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public String getOs() {
+		return os;
+	}
+
+	public void setOs(String os) {
+		this.os = os;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	// 3. method 메서드
+	// 일반적으로 외부에서 접근하기 위해 public으로 공개
+	// 함수는 반드시 returntype정의해야한다.
+
+	// 4. 블락 block
+
+	// 5. 이너클래스 inner class
+
+}

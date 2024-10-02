@@ -1,0 +1,25 @@
+package com.shinhan.day05;
+
+public class Car {
+	// field ; instance 멤버변수, static변수
+	//instance변수 멤버변
+	int gas;
+	private int speed;
+	//method
+	//static 변수, class 변수.객체 생성 없이 사용가능
+	static String company="현대자동차"; // 
+	
+	//static method
+	static void print() {
+		System.out.println("static method");
+	}
+	
+	void setSpeed(int speed){
+		System.out.println("===method이용===");
+		this.speed = speed;
+	}
+	int getSpeed() {
+		return speed;
+		//return this.speed this는 생략가능
+	}
+}

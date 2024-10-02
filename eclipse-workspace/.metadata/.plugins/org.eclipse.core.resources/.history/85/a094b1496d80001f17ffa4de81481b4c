@@ -1,0 +1,12 @@
+package com.shinhan.day05;
+
+public class Car {
+	// field ; instance 멤버변수, static변수
+	int gas;
+	int speed;
+	//method
+	
+	void setSpeed(int speed){
+		this.speed = speed;
+	}
+}

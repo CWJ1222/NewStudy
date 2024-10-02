@@ -1,0 +1,24 @@
+package com.shinhan.day05;
+
+
+//final:최종임, 변경불가
+//사용되는 경우.
+//1.field에 사용하면 값변경불가
+//2.method에 사용하면 재정의 불가
+//3.class에 사용하면 상속 불가
+public class Phone {
+
+	String model;
+	int price;
+	//final 값을 할당 후 수정불가 : instance 변수이므 선언시, 생성시 
+	public final String company = "aa";
+	final String company2;
+	//선언시 초기화 필수(상수), 관례상 이름은 대문자로 사용.
+	final static String COMPANY3="cc";
+	public Phone(){
+		company2 = "bb";
+	}
+	
+	
+
+}

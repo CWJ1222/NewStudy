@@ -1,0 +1,21 @@
+package com.shinhan.day05;
+
+public class PhoneTest {
+
+	public static void main(String[] args) {
+		System.out.println(Phone.COMPANY3);
+		// 이렇게 변경 불가 Phone.COMPANY3 = "dd";
+		Phone p = new Phone();
+		System.out.println(p.company);
+		System.out.println(p.company2);
+		// 수정불가 p.company = "dd";
+		// p.company2 = "dd";
+		
+		//Integer의 최대값
+		//PI값
+	//	Integer.MAX_VALUE =100; 이렇게 변경불가
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Math.PI);
+	}
+
+}

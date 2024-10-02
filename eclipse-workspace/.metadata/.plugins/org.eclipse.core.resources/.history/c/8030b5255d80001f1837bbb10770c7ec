@@ -1,0 +1,28 @@
+package com.shinhan.day05;
+
+
+//서비스, 업무로직
+public class BookMgr {
+Book[] booklist;
+
+public BookMgr(Book[] booklist) {
+	super();
+	this.booklist = booklist;
+}
+public void printBooklist(){
+	System.out.println("---책목록---");
+	for(Book book:booklist) {
+		System.out.println(book.getTitle());
+	}
+}
+public void printTotalPrice() {
+	System.out.println("---책 가격 총");
+	int total=0;
+	for(Book book:booklist) {
+		total += book.getPrice();
+		
+	}
+	System.out.println("전체 가격의 합:%d"+total);
+}
+
+}

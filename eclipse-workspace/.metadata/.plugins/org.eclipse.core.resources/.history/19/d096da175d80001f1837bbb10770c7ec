@@ -1,0 +1,32 @@
+package com.shinhan.day05;
+
+
+//class 는 틀 : template, object들을 만들기 위한 정의
+//공통특성이 담겨 있음
+//object 클래스들을 이용해서 만든 독립된 개체(field 값이 다르다), new로 생성
+
+
+
+
+public class Computer {
+ 	//1. 필드(특징, 속성, 변수:멤버(object)변수, static변수)
+	//멤버마다 값이 다르다.
+
+	String productName;
+	String os;
+	String price;
+	
+	
+	//2. 생성자 constructor, new시 자동호출되는 함수(method), 
+	//이때 자동 초기화(기본형: 정수 0, 실수 0.0, boolean false, 
+	//정의가 없으면 컴파일 시 자동으로 추가됨 Computer(){}
+	//정의하면 자동 추가되지 않음
+	Computer(){
+		System.out.println("Computer ... default 생성자");
+	}
+	
+	//3. method 메서드
+	//4. 블락 block
+	//5. 이너클래스 inner class
+	
+}

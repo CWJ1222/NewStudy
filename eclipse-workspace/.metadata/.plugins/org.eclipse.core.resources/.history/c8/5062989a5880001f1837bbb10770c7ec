@@ -1,0 +1,29 @@
+package com.shinhan.day05;
+
+public class ComputerTest {
+
+	public static void main(String[] args) {
+		f1();
+	}
+
+	private static void f1() {
+		// 기본형이었다면 선언 후 초기화 후 사용하면 됨
+		int a;
+		a = 10;
+		++a;
+		System.out.println(a);
+		// 객체 참조변수를 선언
+		Computer c1;
+		// 객체생성
+		c1 = new Computer();
+		// 객체사용
+		c1.productName = "내컴퓨터";
+		c1.os = "window10";
+		c1.price = "200";
+		System.out.println(c1);
+		System.out.println(c1.productName);
+		System.out.println(c1.os);
+		System.out.println(c1.price);
+	}
+
+}

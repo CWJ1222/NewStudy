@@ -1,0 +1,23 @@
+package com.shinhan.day05;
+
+public class Test {
+int accNo;
+int balance;
+
+public Test(int accNo, int balance) {
+	super();
+	this.accNo = accNo;
+	this.balance = balance;
+}
+save(){
+	
+}
+deposit(){
+	
+}
+getBalance(){
+	
+}
+getAccNo()
+
+}

@@ -1,0 +1,12 @@
+package com.shinhan.day05;
+
+public class Test {
+int accNo;
+int balance;
+
+save()
+deposit()
+getBalance()
+getAccNo()
+
+}

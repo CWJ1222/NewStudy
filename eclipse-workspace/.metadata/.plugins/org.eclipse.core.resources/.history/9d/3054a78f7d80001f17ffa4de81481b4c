@@ -1,0 +1,28 @@
+package com.shinhan.day05;
+
+public class Account {
+	private String accNo;
+	private int balance;
+
+	public Account(String string, int i) {
+		this.accNo = accNo;
+		this.balance = balance;
+	}
+
+	public void deposit(int amount) {
+		balance += amount;
+	}
+
+	public void withdraw(int amount) {
+		balance -= amount;
+	}
+
+	public String getAccNo() {
+		return accNo;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+}
